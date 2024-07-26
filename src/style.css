@@ -1,0 +1,15 @@
+:root {
+    --accent-color-y: #FABE3E;
+    --accent-color-g: #D0D237;
+    --accent-color-b: #95B6D6;
+    --background-color: #FCFCFC;
+    --text-color: #313542;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: "Montserrat", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
