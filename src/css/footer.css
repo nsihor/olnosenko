@@ -1,7 +1,15 @@
 footer {
-    height: 56px;
 }
 
 .f-email {
-    font-size: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+    footer {
+        height: 56px;
+    }
+
+    .f-email {
+        font-size: 20px;
+    }
 }

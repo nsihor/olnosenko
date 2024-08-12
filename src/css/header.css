@@ -1,70 +1,108 @@
 header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding-top: 42px;
 }
 
 .nav-menu {
-    display: flex;
-    align-items: center;
-    gap: 20px;
 }
 
 .nav-main-link {
-    display: flex;
-    align-items: center;
-    gap: 9px;
 }
 
 .nav-y-dot {
-    display: block;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-
-    background-color: var(--accent-color-y);
 }
 
 .nav-name {
-    font-size: 32px;
 }
 
 .nav-direction {
-    font-size: 16px;
 }
 
 .nav-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 160px;
-    height: 40px;
-    border-radius: 24px;
-
-    font-size: 20px;
 }
 
 .g-btn {
-    background-color: var(--accent-color-g);
 }
 
 .b-btn {
-    background-color: var(--accent-color-b);
 }
 
 .lang-toggle {
-    font-size: 32px;
-    letter-spacing: -3px;
 }
 
 .lang-btn {
-    background-color: transparent;
-    border: none;
 }
 
 .lang-slash {
-    margin-left: -2px;
+}
+
+@media screen and (min-width: 1200px) {
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding-top: 42px;
+    }
+
+    .nav-menu {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .nav-main-link {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+    }
+
+    .nav-y-dot {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+
+        background-color: var(--accent-color-y);
+    }
+
+    .nav-name {
+        font-size: 32px;
+    }
+
+    .nav-direction {
+        font-size: 16px;
+    }
+
+    .nav-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 160px;
+        height: 40px;
+        border-radius: 24px;
+
+        font-size: 20px;
+    }
+
+    .g-btn {
+        background-color: var(--accent-color-g);
+    }
+
+    .b-btn {
+        background-color: var(--accent-color-b);
+    }
+
+    .lang-toggle {
+        font-size: 32px;
+        letter-spacing: -3px;
+    }
+
+    .lang-btn {
+        background-color: transparent;
+        border: none;
+    }
+
+    .lang-slash {
+        margin-left: -2px;
+    }
 }
