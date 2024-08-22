@@ -44,16 +44,20 @@
                     <span class="nav-direction">3D Artist</span>
                 </h1>
             </span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="27" fill="none">
-                <path fill="#313542" d="M0 0h30v3H0zM0 12h30v3H0zM0 24h30v3H0z"/>
-            </svg>
+            <button class="transparent-btn" data-action="nd-burger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="27" fill="none">
+                    <path fill="#313542" d="M0 0h30v3H0zM0 12h30v3H0zM0 24h30v3H0z"/>
+                </svg>
+            </button>
         </div>
 <!--        mob menu-->
-        <div class="mb-menu d-n">
+        <div class="mb-menu d-n" data-action="nd-mob-menu">
             <div class="menu-top-container">
-                <svg class="svg-close" xmlns="http://www.w3.org/2000/svg" width="31" height="31" fill="none">
-                    <path stroke="#313542" stroke-width="3" d="m2 2 27 27M2 29 29 2"/>
-                </svg>
+                <button class="transparent-btn svg-close" data-action="nd-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" fill="none">
+                        <path stroke="#313542" stroke-width="3" d="m2 2 27 27M2 29 29 2"/>
+                    </svg>
+                </button>
                 <nav>
                     <ul class="nav-list">
                         <li><a href="index.html">home</a></li>
@@ -62,7 +66,7 @@
                     </ul>
                 </nav>
             </div>
-            <button class="lang-toggle">PL</button>
+            <button class="transparent-btn lang-toggle">PL</button>
         </div>
     </header>
     <main>
@@ -111,6 +115,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Bootstrap-->
-    <script src="src/index.js"></script>
+    <script src="src/js/menuToggle.js"></script>
 </body>
 </html>
