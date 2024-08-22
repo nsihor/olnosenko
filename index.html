@@ -13,11 +13,13 @@
     <link rel="stylesheet" href="src/css/header.css">
     <link rel="stylesheet" href="src/css/footer.css">
     <link rel="stylesheet" href="src/css/main.css">
-    <title>olnoko</title>
+    <link rel="stylesheet" href="src/css/js.css">
+    <title>olnosenko</title>
 </head>
 <body>
     <header>
-        <div class="container">
+<!--        desktop header-->
+        <div class="dt-header">
             <nav class="nav-menu">
                 <a href="index.html" class="nav-main-link">
                     <span class="nav-y-dot"></span>
@@ -33,6 +35,34 @@
                 <span class="lang-slash">|</span>
                 <button class="lang-btn" disabled>pl</button>
             </div>
+        </div>
+<!--        mobile header-->
+        <div class="mb-header">
+            <span class="h-title">
+                <span class="nav-y-dot"></span>
+                <h1 class="nav-name">Oleg Nosenko
+                    <span class="nav-direction">3D Artist</span>
+                </h1>
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="27" fill="none">
+                <path fill="#313542" d="M0 0h30v3H0zM0 12h30v3H0zM0 24h30v3H0z"/>
+            </svg>
+        </div>
+<!--        mob menu-->
+        <div class="mb-menu d-n">
+            <div class="menu-top-container">
+                <svg class="svg-close" xmlns="http://www.w3.org/2000/svg" width="31" height="31" fill="none">
+                    <path stroke="#313542" stroke-width="3" d="m2 2 27 27M2 29 29 2"/>
+                </svg>
+                <nav>
+                    <ul class="nav-list">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="./src/pages/portfolio.html">portfolio</a></li>
+                        <li><a href="./src/pages/contact.html">contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <button class="lang-toggle">PL</button>
         </div>
     </header>
     <main>
