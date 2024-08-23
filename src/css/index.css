@@ -86,3 +86,23 @@ body {
         font-size: 16px;
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .title {
+        font-size: 24px;
+    }
+
+    .text {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .title {
+        font-size: 32px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+}

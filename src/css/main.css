@@ -1,5 +1,7 @@
 .main-section {
     padding-top: 38px;
+    max-width: 720px;
+    margin: 0 auto;
 }
 
 .left {
@@ -20,7 +22,6 @@
 .main-text-list {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 10px;
 }
 
@@ -31,7 +32,6 @@
     gap: 8px;
 
     width: 100%;
-    max-width: 800px;
     aspect-ratio: 428 / 239;
     min-height: 239px;
     padding: 0 12px;
@@ -74,6 +74,7 @@
 
     .main-title-secondary {
         font-size: 24px;
+        margin-bottom: 8vh;
     }
 
     .main_text_block {
@@ -88,51 +89,85 @@
         max-height: 100vh;
     }
 
-    main {
-        height: calc(100vh - 82px - 56px);
-    }
-
-    .main-container {
-        max-width: 1920px;
-        margin: 0 auto;
-        padding: 0 78px;
-    }
-
     .main-section {
         display: flex;
-        justify-content: space-around;
         align-items: center;
+
+        max-width: 1920px;
+        height: calc(100vh - 71px - 63px);
+        padding: 0;
     }
 
     .left {
-        padding: 42px 0;
-        width: 35.5%;
-    }
-
-    .left {
+        max-width: 40vw;
+        margin-left: 11vh;
+        text-align: left;
+        padding: 24px 0;
     }
 
     .main-title {
-        font-size: 48px;
-        margin-bottom: 3.7vh;
+        margin-bottom: 0.4vh;
+        font-size: 36px;
     }
 
     .main-text-list {
         gap: 3vh;
+        font-size: 24px;
+    }
+
+    .main_text_block {
+        gap: 0.8vh;
+        width: 100%;
+        aspect-ratio: 0;
+        min-height: 0;
+        padding: 0;
+    }
+
+    .main-text-list .main_text_block {
+        background-image: none;
+    }
+
+    .main_text_block .title, .main_text_block .text {
+        color: var(--text-color);
+        text-shadow: none;
     }
 
     .main_text_block .title {
         margin-bottom: 1vh;
     }
 
+    .main_text_block .text {
+        padding: 0;
+    }
+
     .img-list {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 11%;
+
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        gap: 15px;
 
-        width: 35.5%;
-        height: 100vh;
-        margin-top: -82px;
-        margin-bottom: -56px;
+        width: 35%;
+    }
+}
+
+@media screen and (min-width: 1630px) {
+    .main-section {
+        height: calc(100vh - 88px - 84px);
+    }
+
+    .left {
+        padding: 48px 0;
+    }
+
+    .main-title {
+        font-size: 48px;
+    }
+
+    .main-text-list {
+        font-size: 32px;
     }
 }
