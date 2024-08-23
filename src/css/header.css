@@ -8,30 +8,31 @@
     align-items: center;
 
     margin: 0 auto;
-    padding: 42px 30px 0;
+    padding: 34px 16px 0;
 }
 
 .h-title {
     display: flex;
     align-items: center;
-    gap: 9px;
+    gap: 4px;
 }
 
 .nav-y-dot {
     display: block;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background-color: var(--accent-color-y);
 }
 
 .nav-name {
-    font-size: 24px;
+    font-weight: 600;
+    font-size: 22px;
 }
 
 .nav-direction {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .lang-toggle {
@@ -72,23 +73,45 @@
     margin-bottom: 50px;
 }
 
+@media screen and (min-width: 425px) {
+    .mb-header {
+        padding: 38px 30px 0;
+    }
 
-.lang-toggle {
-    width: 32px;
+    .h-title {
+        gap: 9px;
+    }
+
+    .nav-y-dot {
+        width: 35px;
+        height: 35px;
+    }
+
+    .nav-name {
+        font-size: 24px;
+    }
+
+    .nav-direction {
+        font-size: 14px;
+    }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
+    .mb-menu {
+        display: none;
+    }
+
+    .mb-header {
+        display: none;
+    }
+
     .dt-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
 
         margin: 0 auto;
-        padding-top: 42px;
-    }
-
-    .mb-header {
-        display: none;
+        padding: 36px 56px 0;
     }
 
     .nav-menu {
@@ -103,29 +126,17 @@
         gap: 9px;
     }
 
-    .nav-y-dot {
-        width: 40px;
-        height: 40px;
-    }
-
-    .nav-name {
-        font-size: 32px;
-    }
-
-    .nav-direction {
-        font-size: 16px;
-    }
-
     .nav-link {
         display: flex;
         justify-content: center;
         align-items: center;
 
-        width: 160px;
-        height: 40px;
+        width: 140px;
+        height: 35px;
         border-radius: 24px;
 
-        font-size: 20px;
+        font-size: 16px;
+        font-weight: 600;
     }
 
     .g-btn {
@@ -137,16 +148,49 @@
     }
 
     .lang-toggle {
+        display: flex;
+        justify-content: space-between;
+
+        width: 48px;
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .lang-toggle button {
+        font-weight: 600;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .dt-header {
+        padding-top: 48px;
+    }
+
+    .nav-menu {
+        gap: 24px;
+    }
+
+    .nav-main-link {
+        gap: 12px;
+    }
+
+    .nav-y-dot {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-name {
         font-size: 32px;
-        letter-spacing: -3px;
     }
 
-    .lang-btn {
-        background-color: transparent;
-        border: none;
+    .nav-link {
+        width: 160px;
+        height: 40px;
+
+        font-size: 20px;
     }
 
-    .lang-slash {
-        margin-left: -2px;
+    .lang-toggle {
+        font-size: 20px;
     }
 }
