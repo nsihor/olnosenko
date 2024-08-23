@@ -1,28 +1,88 @@
-body {
-}
-
-main {
-}
-
 .main-section {
+    padding-top: 38px;
 }
 
 .left {
+    text-align: center;
 }
 
 .main-title {
+    font-size: 36px;
+    margin-bottom: 24px;
+}
+
+.main-title-secondary {
+    font-weight: 200;
+    font-size: 18px;
+    margin-bottom: 38px;
 }
 
 .main-text-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
-.main_text_block .title {
+.main_text_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 428 / 239;
+    min-height: 239px;
+    padding: 0 12px;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    color: #FFF;
+}
+
+.main_text_block:first-child {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/main/one.jpg');
+}
+
+.main_text_block:nth-child(2) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/main/two.jpg');
+}
+
+.main_text_block:last-child {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/main/three.jpg');
+}
+
+.main_text_block .text, .main_text_block .title {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.main_text_block .text {
+    padding: 0 10px;
 }
 
 .img-list {
+    display: none;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 425px) {
+    .main-title {
+        font-size: 48px;
+    }
+
+    .main-title-secondary {
+        font-size: 24px;
+    }
+
+    .main_text_block {
+        gap: 16px;
+        padding: 0 32px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
     body {
         height: 100vh;
         max-height: 100vh;
@@ -30,6 +90,12 @@ main {
 
     main {
         height: calc(100vh - 82px - 56px);
+    }
+
+    .main-container {
+        max-width: 1920px;
+        margin: 0 auto;
+        padding: 0 78px;
     }
 
     .main-section {
@@ -52,8 +118,6 @@ main {
     }
 
     .main-text-list {
-        display: flex;
-        flex-direction: column;
         gap: 3vh;
     }
 

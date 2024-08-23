@@ -17,104 +17,111 @@
     <title>olnosenko</title>
 </head>
 <body>
-    <header>
-<!--        desktop header-->
-        <div class="dt-header">
-            <nav class="nav-menu">
-                <a href="index.html" class="nav-main-link">
-                    <span class="nav-y-dot"></span>
-                    <h1 class="nav-name">Oleg Nosenko
-                        <span class="nav-direction">3D Artist</span>
-                    </h1>
-                </a>
-                <a href="./src/pages/portfolio.html" class="nav-link g-btn">portfolio</a>
-                <a href="./src/pages/contact.html" class="nav-link b-btn">contact</a>
-            </nav>
-            <div class="lang-toggle">
-                <button class="transparent-btn">en</button>
-                <span>|</span>
-                <button class="transparent-btn" disabled>pl</button>
-            </div>
-        </div>
-<!--        mobile header-->
-        <div class="mb-header">
-            <div class="h-title">
+<header>
+    <!--        desktop header-->
+    <div class="dt-header">
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-main-link">
                 <span class="nav-y-dot"></span>
-                <p class="nav-name">Oleg Nosenko
+                <h1 class="nav-name">Oleg Nosenko
                     <span class="nav-direction">3D Artist</span>
-                </p>
-            </div>
-            <button class="transparent-btn" data-action="nd-burger">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="27" fill="none">
-                    <path fill="#313542" d="M0 0h30v3H0zM0 12h30v3H0zM0 24h30v3H0z"/>
+                </h1>
+            </a>
+            <a href="./src/pages/portfolio.html" class="nav-link g-btn">portfolio</a>
+            <a href="./src/pages/contact.html" class="nav-link b-btn">contact</a>
+        </nav>
+        <div class="lang-toggle">
+            <button class="transparent-btn">en</button>
+            <span>|</span>
+            <button class="transparent-btn" disabled>pl</button>
+        </div>
+    </div>
+    <!--        mobile header-->
+    <div class="mb-header">
+        <div class="h-title">
+            <span class="nav-y-dot"></span>
+            <p class="nav-name">Oleg Nosenko
+                <span class="nav-direction">3D Artist</span>
+            </p>
+        </div>
+        <button class="transparent-btn" data-action="nd-burger">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="27" fill="none">
+                <path fill="#313542" d="M0 0h30v3H0zM0 12h30v3H0zM0 24h30v3H0z"/>
+            </svg>
+        </button>
+    </div>
+    <!--        mob menu-->
+    <div class="mb-menu d-n" data-action="nd-mob-menu">
+        <div class="menu-top-container">
+            <button class="transparent-btn svg-close" data-action="nd-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" fill="none">
+                    <path stroke="#313542" stroke-width="3" d="m2 2 27 27M2 29 29 2"/>
                 </svg>
             </button>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="./src/pages/portfolio.html">portfolio</a></li>
+                    <li><a href="./src/pages/contact.html">contact</a></li>
+                </ul>
+            </nav>
         </div>
-<!--        mob menu-->
-        <div class="mb-menu d-n" data-action="nd-mob-menu">
-            <div class="menu-top-container">
-                <button class="transparent-btn svg-close" data-action="nd-close">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" fill="none">
-                        <path stroke="#313542" stroke-width="3" d="m2 2 27 27M2 29 29 2"/>
-                    </svg>
-                </button>
-                <nav>
-                    <ul class="nav-list">
-                        <li><a href="index.html">home</a></li>
-                        <li><a href="./src/pages/portfolio.html">portfolio</a></li>
-                        <li><a href="./src/pages/contact.html">contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <button class="transparent-btn lang-toggle">PL</button>
-        </div>
-    </header>
-    <main>
-        <div class="container">
-            <section class="main-section">
-                <div class="left">
-                    <h2 class="main-title">See it before it becomes real</h2>
-                    <ul class="main-text-list">
-                        <li class="main_text_block">
-                            <h3 class="title">How I Benefit Clients</h3>
-                            <p class="text">I help you visualize projects before they come to life, simplifying decision-making and attracting investors. My photorealistic visualizations allow your clients to see the final result even before construction begins.</p>
-                        </li>
-                        <li class="main_text_block">
-                            <h3 class="title">What I Do</h3>
-                            <p class="text">I create high-quality 3D visualizations of interiors and exteriors that accurately reflect your ideas and plans. My work highlights the uniqueness and advantages of each project, providing detailed and realistic images.</p>
-                        </li>
-                        <li class="main_text_block">
-                            <h3 class="title">Why Choose Me</h3>
-                            <p class="text">With over 10 years of experience in architectural visualization, I guarantee a professional approach and attention to detail. Utilizing advanced technologies and offering a personalized approach to each project ensures high quality and client satisfaction.</p>
-                        </li>
-                    </ul>
-                </div>
-                <ul class="img-list">
-                    <li>
-                        <img src="src/img/main/top.jpg" alt="townhouses">
+        <button class="transparent-btn lang-toggle">PL</button>
+    </div>
+</header>
+<main>
+    <section class="main-section">
+        <div class="main-container">
+            <div class="left">
+                <h2 class="main-title">Architectural Visualization</h2>
+                <p class="main-title-secondary">See it before it becomes real</p>
+                <ul class="main-text-list">
+                    <li class="main_text_block">
+                        <h3 class="title">How I Benefit Clients</h3>
+                        <p class="text">I help you visualize projects before they come to life, simplifying
+                            decision-making and attracting investors. My photorealistic visualizations allow your
+                            clients to see the final result even before construction begins.</p>
                     </li>
-                    <li>
-                        <img src="src/img/main/middle.jpg" alt="townhouses">
+                    <li class="main_text_block">
+                        <h3 class="title">What I Do</h3>
+                        <p class="text">I create high-quality 3D visualizations of interiors and exteriors that
+                            accurately reflect your ideas and plans. My work highlights the uniqueness and advantages of
+                            each project, providing detailed and realistic images.</p>
                     </li>
-                    <li>
-                        <img src="src/img/main/bottom.jpg" alt="apartment complex">
+                    <li class="main_text_block">
+                        <h3 class="title">Why Choose Me</h3>
+                        <p class="text">With over 10 years of experience in architectural visualization, I guarantee a
+                            professional approach and attention to detail. Utilizing advanced technologies and offering
+                            a personalized approach to each project ensures high quality and client satisfaction.</p>
                     </li>
                 </ul>
-            </section>
+            </div>
+            <ul class="img-list">
+                <li>
+                    <img src="src/img/main/one.jpg" alt="townhouses">
+                </li>
+                <li>
+                    <img src="src/img/main/two.jpg" alt="townhouses">
+                </li>
+                <li>
+                    <img src="src/img/main/three.jpg" alt="apartment complex">
+                </li>
+            </ul>
         </div>
-    </main>
-    <footer>
-        <div class="container">
+    </section>
+</main>
+<footer>
+    <div class="container">
             <span class="f-email">
                 info@olnosenko.com
             </span>
-        </div>
-    </footer>
-    <!-- Bootstrap-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Bootstrap-->
-    <script src="src/js/menuToggle.js"></script>
+    </div>
+</footer>
+<!-- Bootstrap-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Bootstrap-->
+<script src="src/js/menuToggle.js"></script>
 </body>
 </html>
