@@ -1,7 +1,23 @@
 footer {
+    padding: 38px 48px 26px;
 }
 
-.f-email {
+.email-block {
+}
+
+.f-title {
+}
+
+.email {
+}
+
+.links-block {
+}
+
+.links-list {
+}
+
+.creator {
 }
 
 @media screen and (min-width: 1200px) {
