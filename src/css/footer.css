@@ -33,12 +33,25 @@ footer {
     font-size: 12px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
     footer {
-        height: 56px;
+        display: flex;
+        padding: 0 0 22px 11vw;
     }
 
-    .f-email {
-        font-size: 20px;
+    .email-block {
+        margin-bottom: 0;
+        margin-right: 11vw;
     }
+
+    .links-block {
+        margin-bottom: 0;
+    }
+
+    .creator {
+        display: inline;
+        margin-top: auto;
+        margin-left: auto;
+    }
+
 }
