@@ -42,6 +42,11 @@ a {
     display: inline-block;
 }
 
+a:hover {
+    color: currentColor;
+    text-decoration: none;
+}
+
 button {
     cursor: pointer;
     padding: 0;
