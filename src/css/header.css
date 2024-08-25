@@ -178,6 +178,12 @@
 
     .lang-toggle button {
         font-weight: 600;
+        color: #3135428C;
+    }
+
+    .lang-toggle button:disabled {
+        color: var(--text-color);
+        cursor: auto;
     }
 }
 
