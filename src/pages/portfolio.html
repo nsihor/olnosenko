@@ -26,12 +26,12 @@
                 <span class="nav-g-dot"></span>
                 <span class="nav-secondary-name">portfolio</span>
             </a>
-            <a href="contact.html" class="nav-link b-btn">contact</a>
+            <a href="contact.html" class="nav-link b-btn" datatype="page-c">contact</a>
         </nav>
         <div class="lang-toggle">
-            <button class="transparent-btn">en</button>
+            <button class="transparent-btn" data-action="d-lang-btn" disabled>en</button>
             <span>|</span>
-            <button class="transparent-btn" disabled>pl</button>
+            <button class="transparent-btn" data-action="d-lang-btn">pl</button>
         </div>
     </div>
     <!--        mobile header-->
@@ -56,22 +56,22 @@
             </button>
             <nav>
                 <ul class="nav-list">
-                    <li><a href="../../index.html">home</a></li>
+                    <li><a href="../../index.html" datatype="page-m">home</a></li>
                     <li><a href="../pages/portfolio.html">portfolio</a></li>
-                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="contact.html" datatype="page-c">contact</a></li>
                 </ul>
             </nav>
         </div>
-        <button class="transparent-btn lang-toggle">PL</button>
+        <button class="transparent-btn lang-toggle" data-action="m-lang-btn">PL</button>
     </div>
 </header>
 <main>
     <section class="portfolio">
         <div class="p-wrap">
             <div class="toggle-type">
-                <button class="t-name transparent-btn" data-action="eBtn" disabled>exteriors</button>
+                <button class="t-name transparent-btn" data-action="eBtn" datatype="btn-exteriors" disabled>exteriors</button>
                 <span class="t-slash"></span>
-                <button class="t-name transparent-btn" data-action="iBtn">interiors</button>
+                <button class="t-name transparent-btn" data-action="iBtn" datatype="btn-interiors">interiors</button>
             </div>
             <div class="exteriors">
                 <ul class="img-list">
@@ -147,6 +147,7 @@
     </div>
 </footer>
 <script src="../js/menuToggle.js"></script>
+<script src="../js/languageTogglePortfolio.js"></script>
 <script src="../js/architectTypeToggle.js"></script>
 </body>
 </html>
