@@ -36,7 +36,7 @@ footer {
 @media screen and (min-width: 1024px) {
     footer {
         display: flex;
-        padding: 0 0 22px 11vw;
+        padding: 0 1.8vw 22px 11vw;
     }
 
     .email-block {

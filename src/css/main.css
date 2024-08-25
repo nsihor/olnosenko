@@ -91,16 +91,17 @@
 
     .main-section {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
 
         max-width: 1920px;
-        height: calc(100vh - 71px - 63px);
-        padding: 0;
+        height: calc(100vh - 71px - 86px);
+        overflow-y: auto;
+        padding: 64px 0;
     }
 
     .left {
-        max-width: 40vw;
-        margin-left: 11vh;
+        max-width: 78vw;
+        margin-left: 11vw;
         text-align: left;
         padding: 24px 0;
     }
@@ -139,12 +140,18 @@
     .main_text_block .text {
         padding: 0;
     }
+}
+
+@media screen and (min-width: 1230px) {
+    .left {
+        max-width: 35vw;
+    }
 
     .img-list {
         position: fixed;
         top: 0;
         bottom: 0;
-        right: 11%;
+        right: 12%;
 
         display: flex;
         flex-direction: column;
