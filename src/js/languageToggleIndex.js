@@ -65,8 +65,22 @@ function setLang() {
 
 setLang();
 
+if (currentLang === 'pl') {
+    dBtns[0].disabled = false;
+    dBtns[1].disabled = true;
+} else {
+    dBtns[0].disabled = true;
+    dBtns[1].disabled = false;
+}
+
 function btnsToggle(l) {
-    mBtn.textContent = l.toUpperCase();
+
+    if (l === 'en'){
+        mBtn.textContent = 'PL';
+    } else {
+        mBtn.textContent = 'EN';
+    }
+
     dBtns.forEach(btn => btn.disabled = !btn.disabled);
 }
 
