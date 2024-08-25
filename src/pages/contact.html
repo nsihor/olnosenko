@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/js.css">
+    <title>olnosenko</title>
+</head>
+<body>
+<header>
+    <!--        desktop header-->
+    <div class="dt-header">
+        <nav class="nav-menu">
+            <a href="../../index.html" class="nav-link y-btn">olnosenko</a>
+            <a href="../pages/portfolio.html" class="nav-link g-btn">portfolio</a>
+            <a href="../pages/contact.html" class="nav-main-link">
+                <span class="nav-b-dot"></span>
+                <span class="nav-secondary-name">contact</span>
+            </a>
+        </nav>
+        <div class="lang-toggle">
+            <button class="transparent-btn">en</button>
+            <span>|</span>
+            <button class="transparent-btn" disabled>pl</button>
+        </div>
+    </div>
+    <!--        mobile header-->
+    <div class="mb-header">
+        <div class="h-title">
+            <span class="nav-b-dot"></span>
+            <p class="nav-name">contact</p>
+        </div>
+        <button class="transparent-btn" data-action="nd-burger">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="27" fill="none">
+                <path fill="#313542" d="M0 0h30v3H0zM0 12h30v3H0zM0 24h30v3H0z"/>
+            </svg>
+        </button>
+    </div>
+    <!--        mob menu-->
+    <div class="mb-menu d-n" data-action="nd-mob-menu">
+        <div class="menu-top-container">
+            <button class="transparent-btn svg-close" data-action="nd-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" fill="none">
+                    <path stroke="#313542" stroke-width="3" d="m2 2 27 27M2 29 29 2"/>
+                </svg>
+            </button>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="../../index.html">home</a></li>
+                    <li><a href="../pages/portfolio.html">portfolio</a></li>
+                    <li><a href="../pages/contact.html">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <button class="transparent-btn lang-toggle">PL</button>
+    </div>
+</header>
+<main>
+    <section class="contacts">
+        <h2 class="c-title">Contact</h2>
+        <div class="c-email-block">
+            <h4 class="c-subtitle">Email</h4>
+            <p class="c-email">info@olnosenko.com</p>
+        </div>
+        <div class="c-links-block">
+            <h4 class="c-subtitle">Follow Me</h4>
+            <ul class="c-links-list">
+                <li><a href="https://www.behance.net/olnosenko" rel="noopener noreferrer" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none">
+                        <g clip-path="url(#a)">
+                            <path fill="#313542"
+                                  d="M29.333 9.333H20V6.667h9.333v2.666Zm2.302 13.334c-.59 1.729-2.706 4-6.802 4-4.098 0-7.418-2.306-7.418-7.567 0-5.213 3.1-7.893 7.288-7.893 4.109 0 6.618 2.376 7.166 5.901.104.675.146 1.584.127 2.853H21.293c.174 4.282 4.644 4.416 6.118 2.706h4.224Zm-10.248-5.334h6.62c-.14-2.062-1.515-2.958-3.303-2.958-1.955 0-3.036 1.024-3.317 2.958ZM8.62 26.651H0V6.695h9.27c7.302.108 7.44 7.258 3.627 9.208 4.615 1.68 4.77 10.748-4.276 10.748ZM4 14.667h4.779c3.344 0 3.874-4-.416-4H4v4Zm4.521 4H4v4.021h4.455c4.073 0 3.824-4.021.066-4.021Z"/>
+                        </g>
+                        <defs>
+                            <clipPath id="a">
+                                <path fill="#fff" d="M0 0h32v32H0z"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a></li>
+                <li><a href="https://www.linkedin.com/in/olnosenko/" rel="noopener noreferrer" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                        <path fill="#313542"
+                              d="M4.98 3.5A2.49 2.49 0 0 1 2.5 6 2.49 2.49 0 0 1 .02 3.5C.02 2.12 1.13 1 2.5 1a2.49 2.49 0 0 1 2.48 2.5ZM5 8H0v16h5V8Zm7.982 0H8.014v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0V24H24V13.869c0-7.88-8.922-7.593-11.018-3.714V8Z"/>
+                    </svg>
+                </a></li>
+                <li><a href="https://t.me/olnosenko" rel="noopener noreferrer" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                        <g clip-path="url(#a)">
+                            <path fill="#313542" fill-rule="evenodd"
+                                  d="M18.384 22.779a1.19 1.19 0 0 0 1.107.145 1.16 1.16 0 0 0 .724-.84C21.084 18 23.192 7.663 23.983 3.948a.78.78 0 0 0-.26-.758.8.8 0 0 0-.797-.14C18.733 4.602 5.82 9.447.542 11.4a.827.827 0 0 0-.542.799c.012.354.25.661.593.764 2.367.708 5.474 1.693 5.474 1.693s1.452 4.385 2.209 6.615c.095.28.314.5.603.576a.866.866 0 0 0 .81-.207l3.097-2.923s3.572 2.619 5.598 4.062Zm-11.01-8.677 1.679 5.538.373-3.507L19.61 6.947a.277.277 0 0 0 .033-.377.284.284 0 0 0-.376-.064L7.374 14.102Z"
+                                  clip-rule="evenodd"/>
+                        </g>
+                        <defs>
+                            <clipPath id="a">
+                                <path fill="#fff" d="M0 0h24v24H0z"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a></li>
+            </ul>
+        </div>
+    </section>
+</main>
+<script src="../js/menuToggle.js"></script>
+</body>
+</html>

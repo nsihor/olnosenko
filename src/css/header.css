@@ -17,7 +17,7 @@
     gap: 4px;
 }
 
-.nav-y-dot, .nav-g-dot {
+.nav-y-dot, .nav-g-dot, .nav-b-dot {
     display: block;
     width: 30px;
     height: 30px;
@@ -30,6 +30,10 @@
 
 .nav-g-dot {
     background-color: var(--accent-color-g);
+}
+
+.nav-b-dot {
+    background-color: var(--accent-color-b);
 }
 
 .nav-name {
@@ -89,7 +93,7 @@
         gap: 9px;
     }
 
-    .nav-y-dot, .nav-g-dot {
+    .nav-y-dot, .nav-g-dot, .nav-b-dot {
         width: 35px;
         height: 35px;
     }
@@ -190,7 +194,7 @@
         gap: 12px;
     }
 
-    .nav-y-dot, .nav-g-dot {
+    .nav-y-dot, .nav-g-dot, .nav-b-dot {
         width: 40px;
         height: 40px;
     }
