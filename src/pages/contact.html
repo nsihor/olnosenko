@@ -24,20 +24,20 @@
             <a href="../pages/portfolio.html" class="nav-link g-btn">portfolio</a>
             <a href="../pages/contact.html" class="nav-main-link">
                 <span class="nav-b-dot"></span>
-                <span class="nav-secondary-name">contact</span>
+                <span class="nav-secondary-name" datatype="page-c">contact</span>
             </a>
         </nav>
         <div class="lang-toggle">
-            <button class="transparent-btn">en</button>
+            <button class="transparent-btn" data-action="d-lang-btn" disabled>en</button>
             <span>|</span>
-            <button class="transparent-btn" disabled>pl</button>
+            <button class="transparent-btn" data-action="d-lang-btn">pl</button>
         </div>
     </div>
     <!--        mobile header-->
     <div class="mb-header">
         <div class="h-title">
             <span class="nav-b-dot"></span>
-            <p class="nav-name">contact</p>
+            <p class="nav-name" datatype="page-c">contact</p>
         </div>
         <button class="transparent-btn" data-action="nd-burger">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="27" fill="none">
@@ -55,13 +55,13 @@
             </button>
             <nav>
                 <ul class="nav-list">
-                    <li><a href="../../index.html">home</a></li>
+                    <li><a href="../../index.html" datatype="page-m">home</a></li>
                     <li><a href="../pages/portfolio.html">portfolio</a></li>
-                    <li><a href="../pages/contact.html">contact</a></li>
+                    <li><a href="../pages/contact.html" datatype="page-c">contact</a></li>
                 </ul>
             </nav>
         </div>
-        <button class="transparent-btn lang-toggle">PL</button>
+        <button class="transparent-btn lang-toggle" data-action="m-lang-btn">PL</button>
     </div>
 </header>
 <main>
@@ -112,5 +112,6 @@
     </section>
 </main>
 <script src="../js/menuToggle.js"></script>
+<script src="../js/languageToggleContact.js"></script>
 </body>
 </html>
