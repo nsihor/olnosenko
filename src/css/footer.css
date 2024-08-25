@@ -3,21 +3,34 @@ footer {
 }
 
 .email-block {
+    margin-bottom: 32px;
 }
 
 .f-title {
+    font-size: 20px;
+    margin-bottom: 8px;
 }
 
 .email {
+    font-weight: 300;
+    font-size: 20px;
 }
 
 .links-block {
+    margin-bottom: 64px;
 }
 
 .links-list {
+    display: flex;
+    gap: 32px;
 }
 
 .creator {
+    display: block;
+    text-align: center;
+
+    font-weight: 200;
+    font-size: 12px;
 }
 
 @media screen and (min-width: 1200px) {
