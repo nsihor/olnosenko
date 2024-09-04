@@ -63,7 +63,7 @@
     justify-content: space-between;
     align-items: center;
 
-    padding: 42px 33px 75px;
+    padding: 34px 16px 75px;
     background-color: #fff;
     text-align: center;
     font-size: 24px;
@@ -104,6 +104,10 @@
 
     .nav-direction {
         font-size: 14px;
+    }
+
+    .mb-menu {
+        padding: 38px 30px 75px;
     }
 }
 
@@ -221,6 +225,7 @@
     }
 
     .lang-toggle {
+        width: 64px;
         font-size: 20px;
     }
 }
