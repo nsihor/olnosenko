@@ -65,6 +65,24 @@
     padding: 0 10px;
 }
 
+@media (hover: none) {
+    .main_text_block:first-child:active {
+        background-image: url('../img/main/one.jpg');
+    }
+
+    .main_text_block:nth-child(2):active {
+        background-image: url('../img/main/two.jpg');
+    }
+
+    .main_text_block:last-child:active {
+        background-image: url('../img/main/three.jpg');
+    }
+
+    .main_text_block:active .text, .main_text_block:active .title {
+        opacity: 0;
+    }
+}
+
 .img-list {
     display: none;
 }

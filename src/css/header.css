@@ -157,18 +157,27 @@
 
         font-size: 16px;
         font-weight: 600;
+
+        transition: background-color 500ms ease;
+    }
+
+    .nav-link:hover, .nav-link:focus {
+        background-color: #FFFFFF;
     }
 
     .y-btn {
         background-color: var(--accent-color-y);
+        border: 2px solid var(--accent-color-y);
     }
 
     .g-btn {
         background-color: var(--accent-color-g);
+        border: 2px solid var(--accent-color-g);
     }
 
     .b-btn {
         background-color: var(--accent-color-b);
+        border: 2px solid var(--accent-color-b);
     }
 
     .lang-toggle {

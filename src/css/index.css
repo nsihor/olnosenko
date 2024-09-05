@@ -75,14 +75,14 @@ body {
 }
 
 .title {
-    font-size: 28px;
+    font-size: 26px;
 }
 
 .text {
-    font-size: 14px;
+    font-size: 12px;
 }
 
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 470px) {
     .title {
         font-size: 32px;
     }
