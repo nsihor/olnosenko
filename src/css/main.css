@@ -11,7 +11,6 @@
 .main-title {
     font-size: 36px;
     margin-bottom: 24px;
-    /*padding: 0 16px;*/
 }
 
 .main-title-secondary {
@@ -43,6 +42,11 @@
     background-size: cover;
 
     color: #FFF;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .main_text_block:first-child {
@@ -129,6 +133,10 @@
     .main-title {
         margin-bottom: 0.4vh;
         font-size: 36px;
+    }
+
+    .main-title-secondary {
+        padding: 0;
     }
 
     .main-text-list {
