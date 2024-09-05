@@ -1,6 +1,8 @@
 const burgerBtn = document.querySelector('[data-action="nd-burger"]');
-const closeBtn = document.querySelector('[data-action="nd-close"]');
 const mobMenu = document.querySelector('[data-action="nd-mob-menu"]')
+const burger = document.querySelector('.burger');
+const title = document.querySelector('.h-title');
+const header = document.querySelector('header');
 
 function toggleBodyScroll() {
     if (document.body.style.overflow === 'hidden') {
@@ -11,11 +13,12 @@ function toggleBodyScroll() {
 }
 
 function toggleMenu() {
-    mobMenu.classList.toggle('d-n');
+    mobMenu.classList.toggle('open');
+    burger.classList.toggle('active');
+    title.classList.toggle('transparent');
+    header.classList.toggle('bgw');
 
     toggleBodyScroll();
 }
 
 burgerBtn.addEventListener('click', toggleMenu);
-
-closeBtn.addEventListener('click', toggleMenu);

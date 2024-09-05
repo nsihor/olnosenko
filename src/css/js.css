@@ -1,3 +1,11 @@
 .d-n {
     display: none;
 }
+
+.bgw {
+    background-color: #FFFFFF;
+}
+
+.transparent {
+    opacity: 0;
+}
