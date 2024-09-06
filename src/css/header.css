@@ -110,12 +110,12 @@ header {
 
 .mb-menu {
     position: fixed;
-    /*top: 67px;*/
+    top: 130%;
     right: 0;
-    bottom: -100%;
+    bottom: -130%;
     left: 0;
 
-    height: calc(100vh - 67px);
+    /*height: calc(100vh - 67px);*/
     z-index: 9;
 
     display: flex;
@@ -128,10 +128,11 @@ header {
     text-align: center;
     font-size: 24px;
 
-    transition: bottom 0.5s ease-in-out;
+    transition: bottom 0.5s ease-in-out, top 0.5s ease-in-out;
 }
 
 .mb-menu.open {
+    top: 67px;
     bottom: 0;
 }
 
@@ -171,6 +172,11 @@ header {
     .mb-menu {
         padding: 38px 30px 75px;
     }
+
+    .mb-menu.open {
+        top: 74px;
+    }
+
 }
 
 @media screen and (min-width: 1024px) {
