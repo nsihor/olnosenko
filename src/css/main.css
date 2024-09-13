@@ -109,8 +109,8 @@
 
 @media screen and (min-width: 1024px) {
     body {
-        height: 100vh;
-        max-height: 100vh;
+        min-height: 100vh;
+        /*max-height: 100vh;*/
     }
 
     .main-section {
@@ -118,16 +118,16 @@
         align-items: flex-start;
 
         max-width: 1920px;
-        height: calc(100vh - 71px - 86px);
-        overflow-y: auto;
+        min-height: calc(100vh - 170px);
+        /*overflow-y: auto;*/
         padding: 64px 0;
     }
 
     .left {
-        max-width: 78vw;
-        margin-left: 11vw;
+        max-width: 40vw;
         text-align: left;
         padding: 24px 0;
+        margin: 0 auto;
     }
 
     .main-title {
@@ -173,6 +173,7 @@
 @media screen and (min-width: 1230px) {
     .left {
         max-width: 35vw;
+        margin:0 0 0 11vw;
     }
 
     .img-list {
