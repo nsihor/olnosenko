@@ -2,13 +2,14 @@ const mBtn = document.querySelector('[data-action="m-lang-btn"]');
 const dBtns = document.querySelectorAll('[data-action="d-lang-btn"]');
 const pMain = document.querySelector('[datatype="page-m"]');
 const psContact = document.querySelectorAll('[datatype="page-c"]');
+const psWorks = document.querySelectorAll('[datatype="page-w"]');
 const title = document.querySelector('.c-title');
 
 const translations = {
     en: {
         pages: [
             'home',
-            'portfolio',
+            'works',
             'contact'
         ],
         title: 'Contact'
@@ -16,7 +17,7 @@ const translations = {
     pl: {
         pages: [
             'główna',
-            'portfolio',
+            'prace',
             'kontakt'
         ],
         title: 'Kontakt'
@@ -61,6 +62,7 @@ function btnsToggle(l) {
 
 function textToggle(l) {
     pMain.textContent = translations[l].pages[0];
+    psWorks.forEach(p => p.textContent = translations[l].pages[1]);
     psContact.forEach(p => p.textContent = translations[l].pages[2]);
 
     title.textContent = translations[l].title;
