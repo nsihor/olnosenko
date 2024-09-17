@@ -197,6 +197,11 @@
         flex-direction: column;
 
         animation: scroll 80s linear infinite;
+        animation-play-state: paused;
+    }
+
+    .img-list:hover {
+        animation-play-state: running;
     }
 
     .img-item {
