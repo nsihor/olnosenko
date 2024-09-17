@@ -45,6 +45,12 @@
 }
 
 @media screen and (min-width: 1024px) {
+    body {
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr auto;
+    }
+
     .portfolio {
         padding: 64px 56px;
     }
