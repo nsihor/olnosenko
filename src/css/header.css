@@ -32,14 +32,17 @@ header {
 
 .nav-y-dot {
     background-color: var(--accent-color-y);
+    border: 2px solid var(--accent-color-y)
 }
 
 .nav-g-dot {
     background-color: var(--accent-color-g);
+    border: 2px solid var(--accent-color-g)
 }
 
 .nav-b-dot {
     background-color: var(--accent-color-b);
+    border: 2px solid var(--accent-color-b)
 }
 
 .nav-name {
@@ -115,7 +118,6 @@ header {
     bottom: -130%;
     left: 0;
 
-    /*height: calc(100vh - 67px);*/
     z-index: 9;
 
     display: flex;
@@ -230,7 +232,7 @@ header {
     }
 
     .nav-link:hover, .nav-link:focus {
-        background-color: #FFFFFF;
+        background-color: transparent;
     }
 
     .y-btn {
@@ -246,6 +248,14 @@ header {
     .b-btn {
         background-color: var(--accent-color-b);
         border: 2px solid var(--accent-color-b);
+    }
+
+    .nav-y-dot, .nav-g-dot, .nav-b-dot {
+        transition: background-color 500ms ease;
+    }
+
+    .nav-main-link:hover .nav-y-dot, .nav-main-link:hover .nav-g-dot, .nav-main-link:hover .nav-b-dot {
+        background-color: transparent;
     }
 
     .lang-toggle {
